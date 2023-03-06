@@ -40,7 +40,7 @@ public class AccountController {
     }
 
     @DeleteMapping("/{id}")
-    String deleteAccount(Long id){
+    String deleteAccount(@PathVariable Long id){
         accountService.deleteAccount(id);
         return "ACCOUNT DELETED SUCCESSFULLY";
     }

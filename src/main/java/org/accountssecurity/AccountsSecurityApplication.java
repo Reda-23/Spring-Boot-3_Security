@@ -20,10 +20,10 @@ public class AccountsSecurityApplication {
     @Bean
     CommandLineRunner commandLineRunner(AccountService accountService){
         return args -> {
-            accountService.saveAccount(new AccountRequest(null,"John","1234","ADMIN",new Date(),"John Travolta"));
-            accountService.saveAccount(new AccountRequest(null,"Mike","1234","USER",new Date(),"Mike Tyson"));
-            accountService.saveAccount(new AccountRequest(null,"Elon","1234","ADMIN",new Date(),"Elon Musk"));
-            accountService.saveAccount(new AccountRequest(null,"Tom","1234","USER",new Date(),"Tom Hanks"));
+            accountService.saveAccount(new AccountRequest(null,"John","1234","ADMIN","John Travolta"));
+            accountService.saveAccount(new AccountRequest(null,"Mike","1234","USER","Mike Tyson"));
+            accountService.saveAccount(new AccountRequest(null,"Elon","1234","ADMIN","Elon Musk"));
+            accountService.saveAccount(new AccountRequest(null,"Tom","1234","USER","Tom Hanks"));
         };
     }
 

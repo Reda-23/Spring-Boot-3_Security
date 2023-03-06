@@ -8,15 +8,13 @@ public class AccountRequest {
     private String username;
     private String password;
     private String role;
-    private Date date;
     private String fullName;
 
-    public AccountRequest(Long id, String username, String password, String role, Date date, String fullName) {
+    public AccountRequest(Long id, String username, String password, String role, String fullName) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.role = role;
-        this.date = date;
         this.fullName = fullName;
     }
     public AccountRequest() {}
@@ -53,13 +51,6 @@ public class AccountRequest {
         this.role = role;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public String getFullName() {
         return fullName;

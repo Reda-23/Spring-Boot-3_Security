@@ -18,7 +18,6 @@ public class Account {
     private String username;
     private String password;
     private String role;
-    private Date date;
     private String fullName;
 
     public Long getId() {
@@ -53,13 +52,6 @@ public class Account {
         this.role = role;
     }
 
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
-    }
 
     public String getFullName() {
         return fullName;
@@ -72,12 +64,11 @@ public class Account {
     public Account() {
     }
 
-    public Account(Long id, String username, String password, String role, Date date, String fullName) {
+    public Account(Long id, String username, String password, String role,  String fullName) {
         this.id = id;
         this.username = username;
         this.password = password;
         this.role = role;
-        this.date = date;
         this.fullName = fullName;
     }
 }
