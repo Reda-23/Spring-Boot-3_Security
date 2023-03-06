@@ -19,6 +19,7 @@ public class AccountRequest {
         this.date = date;
         this.fullName = fullName;
     }
+    public AccountRequest() {}
 
     public Long getId() {
         return id;
